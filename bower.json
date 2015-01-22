@@ -1,0 +1,19 @@
+{
+  "name": "simple-router",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Joel <cdata@google.com>"
+  ],
+  "description": "A simple, declarative routing solution for Polymer applications.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#0.8-preview"
+  }
+}
