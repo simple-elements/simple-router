@@ -1,0 +1,25 @@
+<link rel="import" href="../simple-router.html">
+<link rel="import" href="../simple-route.html">
+
+<template>
+  <simple-router>
+    <simple-route from="foo" call="{{ foo }}"></simple-route>
+    <simple-route from="bar/:baz" call="{{ bar }}"></simple-route>
+    <simple-route from="vim" call="vim">
+      <simple-route from=":qux" call="{{ qux }}">
+        <simple-route from="wiz" call="{{ wiz }}"></simple-route>
+      </simple-route>
+      <simple-route from="bif" call="bif"></simple-route>
+    </simple-route>
+  </simple-router>
+</template>
+
+<script>
+Polymer({
+  is: 'demo-app',
+
+  ready: function () {
+    console.log('DEMO APP READY');
+  }
+});
+</script>
